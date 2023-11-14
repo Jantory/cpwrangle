@@ -1,0 +1,242 @@
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/iTunes-Amazon | finetune  | entity_matching | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 94, in _init_group
+    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 10.92 GiB total capacity; 9.96 GiB already allocated; 7.38 MiB free; 10.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +-----------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                      | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++-----------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/Beer | finetune  | entity_matching | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++-----------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 94, in _init_group
+    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 10.92 GiB total capacity; 10.23 GiB already allocated; 9.38 MiB free; 10.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/Fodors-Zagats | finetune  | entity_matching | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 92, in _init_group
+    state['exp_avg'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 10.92 GiB total capacity; 9.53 GiB already allocated; 17.38 MiB free; 10.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +---------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                                | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++---------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/Walmart-Amazon | finetune  | entity_matching | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++---------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 94, in _init_group
+    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 10.92 GiB total capacity; 10.14 GiB already allocated; 11.38 MiB free; 10.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/Amazon-Google | finetune  | entity_matching | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 94, in _init_group
+    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 10.92 GiB total capacity; 10.16 GiB already allocated; 13.38 MiB free; 10.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +---------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                          | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++---------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/DBLP-ACM | finetune  | entity_matching | 4          | 50     | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++---------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 92, in _init_group
+    state['exp_avg'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 10.92 GiB total capacity; 10.25 GiB already allocated; 7.38 MiB free; 10.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +-------------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                                    | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++-------------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/entity_matching/structured/DBLP-GoogleScholar | finetune  | entity_matching | 4          | 50     | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++-------------------------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 92, in _init_group
+    state['exp_avg'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 10.92 GiB total capacity; 10.11 GiB already allocated; 13.38 MiB free; 10.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +----------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                               | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++----------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/error_detection/Hospital | finetune  | error_detection | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++----------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 94, in _init_group
+    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 10.92 GiB total capacity; 10.21 GiB already allocated; 21.38 MiB free; 10.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +-----------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                          | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++-----------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/data_imputation/Buy | finetune  | data_imputation | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++-----------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 92, in _init_group
+    state['exp_avg'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 10.92 GiB total capacity; 10.15 GiB already allocated; 15.38 MiB free; 10.35 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data_dir                                 | peft_type | task            | batch_size | epochs | lr     | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | base_model | sep_tok |
++------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+| data/datasets/data_imputation/Restaurant | finetune  | data_imputation | 8          | 100    | 0.0005 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | t5-large   | .       |
++------------------------------------------+-----------+-----------------+------------+--------+--------+------+------------+--------+-----------+--------------------+---------+---+----+------------+---------+
+Number of Trainable Parameters: 737668096
+Traceback (most recent call last):
+  File "model.py", line 227, in <module>
+    train_model(init_args)
+  File "model.py", line 115, in train_model
+    optimizer.step()
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 132, in step
+    self._init_group(
+  File "/home/zzhang1/miniconda3/envs/peft/lib/python3.8/site-packages/torch/optim/adam.py", line 94, in _init_group
+    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 10.92 GiB total capacity; 10.09 GiB already allocated; 9.38 MiB free; 10.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

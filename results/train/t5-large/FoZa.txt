@@ -1,0 +1,454 @@
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+-------+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr    | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-------+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data/datasets/entity_matching/structured/Fodors-Zagats | lora      | entity_matching | 8          | 100    | 0.001 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-------+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+trainable params: 2,359,296 || all params: 740,027,392 || trainable%: 0.31881198257050464
+Epoch: 0 | Train Loss: 1.2971 | Val Loss: 0.0343 | Train Acc: 0.7302 | Val Acc: 0.9789 | Train F1: 0.0003 | Val F1: 0.9000 | Train Time: 41.63845872879028 secs
+Saving model with validation F1: 0.9 at epoch: 0
+Epoch: 1 | Train Loss: 0.0157 | Val Loss: 0.0001 | Train Acc: 0.9877 | Val Acc: 1.0000 | Train F1: 0.9440 | Val F1: 1.0000 | Train Time: 26.703084468841553 secs
+Saving model with validation F1: 1.0 at epoch: 1
+Epoch: 2 | Train Loss: 0.0005 | Val Loss: 0.0001 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 26.84504461288452 secs
+Epoch: 3 | Train Loss: 0.0003 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 26.832865715026855 secs
+Epoch: 4 | Train Loss: 0.0003 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 26.855130910873413 secs
+Epoch: 5 | Train Loss: 0.0005 | Val Loss: 0.0016 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.067338943481445 secs
+Epoch: 6 | Train Loss: 0.0059 | Val Loss: 0.0000 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 26.97364377975464 secs
+Epoch: 7 | Train Loss: 0.0002 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.027893781661987 secs
+Epoch: 8 | Train Loss: 0.0002 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.04016923904419 secs
+Epoch: 9 | Train Loss: 0.0723 | Val Loss: 0.0320 | Train Acc: 0.9630 | Val Acc: 0.9895 | Train F1: 0.8372 | Val F1: 0.9565 | Train Time: 27.098002195358276 secs
+Epoch: 10 | Train Loss: 0.0111 | Val Loss: 0.0010 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 27.24623727798462 secs
+Epoch: 11 | Train Loss: 0.0009 | Val Loss: 0.0001 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.7372727394104 secs
+Epoch: 12 | Train Loss: 0.0003 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.39755630493164 secs
+Epoch: 13 | Train Loss: 0.0002 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.56919002532959 secs
+Epoch: 14 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.82717275619507 secs
+Epoch: 15 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.90604877471924 secs
+Epoch: 16 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 28.350653886795044 secs
+Epoch: 17 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.55436658859253 secs
+Epoch: 18 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.674171686172485 secs
+Epoch: 19 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.97163701057434 secs
+Epoch: 20 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.82441735267639 secs
+Epoch: 21 | Train Loss: 0.0064 | Val Loss: 0.0288 | Train Acc: 0.9982 | Val Acc: 0.9947 | Train F1: 0.9924 | Val F1: 0.9778 | Train Time: 27.916192054748535 secs
+Epoch: 22 | Train Loss: 0.0096 | Val Loss: 0.0001 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 27.57912564277649 secs
+Epoch: 23 | Train Loss: 0.0002 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.769052743911743 secs
+Epoch: 24 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.66974639892578 secs
+Epoch: 25 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.61109733581543 secs
+Epoch: 26 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 28.100719690322876 secs
+Epoch: 27 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.777806043624878 secs
+Epoch: 28 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.780640363693237 secs
+Epoch: 29 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.577815294265747 secs
+Epoch: 30 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.69759702682495 secs
+Epoch: 31 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.365489721298218 secs
+Epoch: 32 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.597404718399048 secs
+Epoch: 33 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.47401475906372 secs
+Epoch: 34 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.7540922164917 secs
+Epoch: 35 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.430164575576782 secs
+Epoch: 36 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.523013591766357 secs
+Epoch: 37 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.93617868423462 secs
+Epoch: 38 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.701219081878662 secs
+Epoch: 39 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.633892059326172 secs
+Epoch: 40 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.748414516448975 secs
+Epoch: 41 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.47937512397766 secs
+Epoch: 42 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.563040256500244 secs
+Epoch: 43 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.734859943389893 secs
+Epoch: 44 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.581127166748047 secs
+Epoch: 45 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.814173936843872 secs
+Epoch: 46 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.354856967926025 secs
+Epoch: 47 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.59080672264099 secs
+Epoch: 48 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.56442165374756 secs
+Epoch: 49 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.760589599609375 secs
+Epoch: 50 | Train Loss: 0.0088 | Val Loss: 0.0018 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9774 | Val F1: 1.0000 | Train Time: 27.389057636260986 secs
+Epoch: 51 | Train Loss: 0.0203 | Val Loss: 0.0858 | Train Acc: 0.9912 | Val Acc: 0.9684 | Train F1: 0.9612 | Val F1: 0.8800 | Train Time: 27.42004680633545 secs
+Epoch: 52 | Train Loss: 0.0241 | Val Loss: 0.0043 | Train Acc: 0.9912 | Val Acc: 0.9947 | Train F1: 0.9618 | Val F1: 0.9778 | Train Time: 27.519811868667603 secs
+Epoch: 53 | Train Loss: 0.0009 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.6120867729187 secs
+Epoch: 54 | Train Loss: 0.0002 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.467710971832275 secs
+Epoch: 55 | Train Loss: 0.0003 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.668960094451904 secs
+Epoch: 56 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.63526701927185 secs
+Epoch: 57 | Train Loss: 0.0002 | Val Loss: 0.0006 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.846407413482666 secs
+Epoch: 58 | Train Loss: 0.0001 | Val Loss: 0.0001 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.650288581848145 secs
+Epoch: 59 | Train Loss: 0.0001 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.728785753250122 secs
+Epoch: 60 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.76342225074768 secs
+Epoch: 61 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.4996075630188 secs
+Epoch: 62 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.67703890800476 secs
+Epoch: 63 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.7527596950531 secs
+Epoch: 64 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.594913721084595 secs
+Epoch: 65 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.723101139068604 secs
+Epoch: 66 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.334402799606323 secs
+Epoch: 67 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.44616150856018 secs
+Epoch: 68 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.378750562667847 secs
+Epoch: 69 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.879721879959106 secs
+Epoch: 70 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.643741846084595 secs
+Epoch: 71 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.58683967590332 secs
+Epoch: 72 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.71459460258484 secs
+Epoch: 73 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.51813769340515 secs
+Epoch: 74 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.884536504745483 secs
+Epoch: 75 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.747124671936035 secs
+Epoch: 76 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.707013845443726 secs
+Epoch: 77 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.44696307182312 secs
+Epoch: 78 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.663499116897583 secs
+Epoch: 79 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.613890409469604 secs
+Epoch: 80 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.61250400543213 secs
+Epoch: 81 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.3604416847229 secs
+Epoch: 82 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.588804721832275 secs
+Epoch: 83 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.661956071853638 secs
+Epoch: 84 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.577959537506104 secs
+Epoch: 85 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.86855173110962 secs
+Epoch: 86 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.71393060684204 secs
+Epoch: 87 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.531240940093994 secs
+Epoch: 88 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.530550241470337 secs
+Epoch: 89 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.709903240203857 secs
+Epoch: 90 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.647679090499878 secs
+Epoch: 91 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.620490550994873 secs
+Epoch: 92 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.146917581558228 secs
+Epoch: 93 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.421558141708374 secs
+Epoch: 94 | Train Loss: 0.0011 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9925 | Val F1: 1.0000 | Train Time: 27.36487579345703 secs
+Epoch: 95 | Train Loss: 0.0003 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.14537501335144 secs
+Epoch: 96 | Train Loss: 0.0002 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.537985801696777 secs
+Epoch: 97 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.1551411151886 secs
+Epoch: 98 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.452101469039917 secs
+Epoch: 99 | Train Loss: 0.0000 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 27.330079317092896 secs
+The predictive performance on test data of Fodors-Zagats is: {'precision': 1.0, 'recall': 1.0, 'accuracy': 1.0, 'f1': 1.0}
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr  | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data/datasets/entity_matching/structured/Fodors-Zagats | prefix    | entity_matching | 8          | 100    | 0.2 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+trainable params: 2,457,600 || all params: 740,125,696 || trainable%: 0.3320517059848169
+Epoch: 0 | Train Loss: 0.5063 | Val Loss: 0.3584 | Train Acc: 0.8342 | Val Acc: 0.3158 | Train F1: 0.0010 | Val F1: 0.2529 | Train Time: 16.523367404937744 secs
+Saving model with validation F1: 0.2528735632183908 at epoch: 0
+Epoch: 1 | Train Loss: 0.1982 | Val Loss: 0.1540 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 15.72792911529541 secs
+Epoch: 2 | Train Loss: 0.1663 | Val Loss: 0.1407 | Train Acc: 0.8942 | Val Acc: 0.8842 | Train F1: 0.2292 | Val F1: 0.0000 | Train Time: 15.70459508895874 secs
+Epoch: 3 | Train Loss: 0.0912 | Val Loss: 0.0182 | Train Acc: 0.9347 | Val Acc: 0.9947 | Train F1: 0.6606 | Val F1: 0.9767 | Train Time: 15.680758237838745 secs
+Saving model with validation F1: 0.9767441860465117 at epoch: 3
+Epoch: 4 | Train Loss: 0.1393 | Val Loss: 0.0206 | Train Acc: 0.9030 | Val Acc: 1.0000 | Train F1: 0.4954 | Val F1: 1.0000 | Train Time: 15.732268571853638 secs
+Saving model with validation F1: 1.0 at epoch: 4
+Epoch: 5 | Train Loss: 0.0672 | Val Loss: 0.0300 | Train Acc: 0.9489 | Val Acc: 0.9684 | Train F1: 0.7603 | Val F1: 0.8421 | Train Time: 15.71116042137146 secs
+Epoch: 6 | Train Loss: 0.0706 | Val Loss: 0.0016 | Train Acc: 0.9453 | Val Acc: 1.0000 | Train F1: 0.7395 | Val F1: 1.0000 | Train Time: 15.839248180389404 secs
+Epoch: 7 | Train Loss: 0.0780 | Val Loss: 0.0037 | Train Acc: 0.9506 | Val Acc: 1.0000 | Train F1: 0.7705 | Val F1: 1.0000 | Train Time: 15.790719032287598 secs
+Epoch: 8 | Train Loss: 0.0322 | Val Loss: 0.0021 | Train Acc: 0.9788 | Val Acc: 1.0000 | Train F1: 0.9062 | Val F1: 1.0000 | Train Time: 15.755526304244995 secs
+Epoch: 9 | Train Loss: 0.0751 | Val Loss: 0.0084 | Train Acc: 0.9453 | Val Acc: 1.0000 | Train F1: 0.7634 | Val F1: 1.0000 | Train Time: 15.69916558265686 secs
+Epoch: 10 | Train Loss: 0.0619 | Val Loss: 0.0068 | Train Acc: 0.9506 | Val Acc: 1.0000 | Train F1: 0.7778 | Val F1: 1.0000 | Train Time: 15.79366946220398 secs
+Epoch: 11 | Train Loss: 0.0535 | Val Loss: 0.0020 | Train Acc: 0.9541 | Val Acc: 1.0000 | Train F1: 0.7903 | Val F1: 1.0000 | Train Time: 15.896849155426025 secs
+Epoch: 12 | Train Loss: 0.0345 | Val Loss: 0.0006 | Train Acc: 0.9753 | Val Acc: 1.0000 | Train F1: 0.8939 | Val F1: 1.0000 | Train Time: 15.871284484863281 secs
+Epoch: 13 | Train Loss: 0.0353 | Val Loss: 0.0010 | Train Acc: 0.9771 | Val Acc: 1.0000 | Train F1: 0.8976 | Val F1: 1.0000 | Train Time: 15.865647077560425 secs
+Epoch: 14 | Train Loss: 0.0453 | Val Loss: 0.0005 | Train Acc: 0.9594 | Val Acc: 1.0000 | Train F1: 0.8189 | Val F1: 1.0000 | Train Time: 15.950068950653076 secs
+Epoch: 15 | Train Loss: 0.0326 | Val Loss: 0.0097 | Train Acc: 0.9753 | Val Acc: 0.9947 | Train F1: 0.8906 | Val F1: 0.9778 | Train Time: 15.849869728088379 secs
+Epoch: 16 | Train Loss: 0.0319 | Val Loss: 0.0001 | Train Acc: 0.9806 | Val Acc: 1.0000 | Train F1: 0.9147 | Val F1: 1.0000 | Train Time: 15.874792098999023 secs
+Epoch: 17 | Train Loss: 0.0837 | Val Loss: 0.0096 | Train Acc: 0.9559 | Val Acc: 1.0000 | Train F1: 0.8000 | Val F1: 1.0000 | Train Time: 15.82192587852478 secs
+Epoch: 18 | Train Loss: 0.0466 | Val Loss: 0.0026 | Train Acc: 0.9718 | Val Acc: 1.0000 | Train F1: 0.8710 | Val F1: 1.0000 | Train Time: 15.80892825126648 secs
+Epoch: 19 | Train Loss: 0.0489 | Val Loss: 0.0004 | Train Acc: 0.9630 | Val Acc: 1.0000 | Train F1: 0.8421 | Val F1: 1.0000 | Train Time: 15.88689374923706 secs
+Epoch: 20 | Train Loss: 0.0451 | Val Loss: 0.0108 | Train Acc: 0.9594 | Val Acc: 1.0000 | Train F1: 0.8189 | Val F1: 1.0000 | Train Time: 15.87682056427002 secs
+Epoch: 21 | Train Loss: 0.0342 | Val Loss: 0.0002 | Train Acc: 0.9771 | Val Acc: 1.0000 | Train F1: 0.8992 | Val F1: 1.0000 | Train Time: 15.842922687530518 secs
+Epoch: 22 | Train Loss: 0.0486 | Val Loss: 0.0107 | Train Acc: 0.9718 | Val Acc: 0.9947 | Train F1: 0.8710 | Val F1: 0.9778 | Train Time: 15.843117713928223 secs
+Epoch: 23 | Train Loss: 0.0292 | Val Loss: 0.0002 | Train Acc: 0.9771 | Val Acc: 1.0000 | Train F1: 0.9008 | Val F1: 1.0000 | Train Time: 15.978029727935791 secs
+Epoch: 24 | Train Loss: 0.0381 | Val Loss: 0.0005 | Train Acc: 0.9718 | Val Acc: 1.0000 | Train F1: 0.8788 | Val F1: 1.0000 | Train Time: 15.97748851776123 secs
+Epoch: 25 | Train Loss: 0.0564 | Val Loss: 0.0011 | Train Acc: 0.9665 | Val Acc: 1.0000 | Train F1: 0.8550 | Val F1: 1.0000 | Train Time: 16.001225233078003 secs
+Epoch: 26 | Train Loss: 0.1110 | Val Loss: 0.0139 | Train Acc: 0.9206 | Val Acc: 1.0000 | Train F1: 0.6281 | Val F1: 1.0000 | Train Time: 15.893391847610474 secs
+Epoch: 27 | Train Loss: 0.0476 | Val Loss: 0.0095 | Train Acc: 0.9647 | Val Acc: 0.9947 | Train F1: 0.8387 | Val F1: 0.9778 | Train Time: 15.84393835067749 secs
+Epoch: 28 | Train Loss: 0.0314 | Val Loss: 0.0094 | Train Acc: 0.9753 | Val Acc: 0.9947 | Train F1: 0.8923 | Val F1: 0.9778 | Train Time: 15.962748765945435 secs
+Epoch: 29 | Train Loss: 0.0602 | Val Loss: 0.0034 | Train Acc: 0.9700 | Val Acc: 1.0000 | Train F1: 0.8702 | Val F1: 1.0000 | Train Time: 15.97553539276123 secs
+Epoch: 30 | Train Loss: 0.0494 | Val Loss: 0.0022 | Train Acc: 0.9630 | Val Acc: 1.0000 | Train F1: 0.8320 | Val F1: 1.0000 | Train Time: 15.83415675163269 secs
+Epoch: 31 | Train Loss: 0.0257 | Val Loss: 0.0011 | Train Acc: 0.9841 | Val Acc: 1.0000 | Train F1: 0.9313 | Val F1: 1.0000 | Train Time: 15.939223289489746 secs
+Epoch: 32 | Train Loss: 0.0338 | Val Loss: 0.0004 | Train Acc: 0.9735 | Val Acc: 1.0000 | Train F1: 0.8855 | Val F1: 1.0000 | Train Time: 15.742817163467407 secs
+Epoch: 33 | Train Loss: 0.0203 | Val Loss: 0.0001 | Train Acc: 0.9859 | Val Acc: 1.0000 | Train F1: 0.9385 | Val F1: 1.0000 | Train Time: 15.802064180374146 secs
+Epoch: 34 | Train Loss: 0.0158 | Val Loss: 0.0000 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9545 | Val F1: 1.0000 | Train Time: 16.019861936569214 secs
+Epoch: 35 | Train Loss: 0.0473 | Val Loss: 0.0018 | Train Acc: 0.9612 | Val Acc: 1.0000 | Train F1: 0.8254 | Val F1: 1.0000 | Train Time: 15.753987789154053 secs
+Epoch: 36 | Train Loss: 0.0329 | Val Loss: 0.0038 | Train Acc: 0.9683 | Val Acc: 1.0000 | Train F1: 0.8594 | Val F1: 1.0000 | Train Time: 16.022494077682495 secs
+Epoch: 37 | Train Loss: 0.0476 | Val Loss: 0.0054 | Train Acc: 0.9647 | Val Acc: 1.0000 | Train F1: 0.8438 | Val F1: 1.0000 | Train Time: 15.849758625030518 secs
+Epoch: 38 | Train Loss: 0.0153 | Val Loss: 0.0005 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9545 | Val F1: 1.0000 | Train Time: 15.927966117858887 secs
+Epoch: 39 | Train Loss: 0.0207 | Val Loss: 0.0001 | Train Acc: 0.9877 | Val Acc: 1.0000 | Train F1: 0.9466 | Val F1: 1.0000 | Train Time: 15.882612466812134 secs
+Epoch: 40 | Train Loss: 0.0074 | Val Loss: 0.0002 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.879378318786621 secs
+Epoch: 41 | Train Loss: 0.0260 | Val Loss: 0.0032 | Train Acc: 0.9824 | Val Acc: 1.0000 | Train F1: 0.9242 | Val F1: 1.0000 | Train Time: 15.903602600097656 secs
+Epoch: 42 | Train Loss: 0.0131 | Val Loss: 0.0001 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9538 | Val F1: 1.0000 | Train Time: 15.725185632705688 secs
+Epoch: 43 | Train Loss: 0.0122 | Val Loss: 0.0002 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9618 | Val F1: 1.0000 | Train Time: 15.86366605758667 secs
+Epoch: 44 | Train Loss: 0.0105 | Val Loss: 0.0000 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9538 | Val F1: 1.0000 | Train Time: 15.84927248954773 secs
+Epoch: 45 | Train Loss: 0.0089 | Val Loss: 0.0000 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9774 | Val F1: 1.0000 | Train Time: 15.853843688964844 secs
+Epoch: 46 | Train Loss: 0.0192 | Val Loss: 0.0001 | Train Acc: 0.9877 | Val Acc: 1.0000 | Train F1: 0.9474 | Val F1: 1.0000 | Train Time: 15.900333166122437 secs
+Epoch: 47 | Train Loss: 0.0141 | Val Loss: 0.0012 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9618 | Val F1: 1.0000 | Train Time: 15.868837356567383 secs
+Epoch: 48 | Train Loss: 0.0149 | Val Loss: 0.0001 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9552 | Val F1: 1.0000 | Train Time: 15.831655025482178 secs
+Epoch: 49 | Train Loss: 0.0118 | Val Loss: 0.0008 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9767 | Val F1: 1.0000 | Train Time: 15.79990005493164 secs
+Epoch: 50 | Train Loss: 0.0202 | Val Loss: 0.0001 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9612 | Val F1: 1.0000 | Train Time: 15.958699226379395 secs
+Epoch: 51 | Train Loss: 0.0040 | Val Loss: 0.0001 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.889540910720825 secs
+Epoch: 52 | Train Loss: 0.0255 | Val Loss: 0.0081 | Train Acc: 0.9771 | Val Acc: 0.9895 | Train F1: 0.8992 | Val F1: 0.9565 | Train Time: 15.899962663650513 secs
+Epoch: 53 | Train Loss: 0.0106 | Val Loss: 0.0096 | Train Acc: 0.9894 | Val Acc: 0.9895 | Train F1: 0.9538 | Val F1: 0.9565 | Train Time: 15.887111902236938 secs
+Epoch: 54 | Train Loss: 0.0115 | Val Loss: 0.0007 | Train Acc: 0.9877 | Val Acc: 1.0000 | Train F1: 0.9481 | Val F1: 1.0000 | Train Time: 15.878520250320435 secs
+Epoch: 55 | Train Loss: 0.0100 | Val Loss: 0.0000 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9771 | Val F1: 1.0000 | Train Time: 15.797377824783325 secs
+Epoch: 56 | Train Loss: 0.0182 | Val Loss: 0.0127 | Train Acc: 0.9894 | Val Acc: 0.9895 | Train F1: 0.9538 | Val F1: 0.9565 | Train Time: 15.866511583328247 secs
+Epoch: 57 | Train Loss: 0.0097 | Val Loss: 0.0011 | Train Acc: 0.9929 | Val Acc: 1.0000 | Train F1: 0.9697 | Val F1: 1.0000 | Train Time: 16.013458490371704 secs
+Epoch: 58 | Train Loss: 0.0086 | Val Loss: 0.0008 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9771 | Val F1: 1.0000 | Train Time: 15.711449146270752 secs
+Epoch: 59 | Train Loss: 0.0129 | Val Loss: 0.0001 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9552 | Val F1: 1.0000 | Train Time: 15.857917785644531 secs
+Epoch: 60 | Train Loss: 0.0175 | Val Loss: 0.0000 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9552 | Val F1: 1.0000 | Train Time: 15.80478549003601 secs
+Epoch: 61 | Train Loss: 0.0125 | Val Loss: 0.0000 | Train Acc: 0.9929 | Val Acc: 1.0000 | Train F1: 0.9697 | Val F1: 1.0000 | Train Time: 15.863662481307983 secs
+Epoch: 62 | Train Loss: 0.0110 | Val Loss: 0.0032 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9771 | Val F1: 1.0000 | Train Time: 15.841618299484253 secs
+Epoch: 63 | Train Loss: 0.0047 | Val Loss: 0.0001 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.868147373199463 secs
+Epoch: 64 | Train Loss: 0.0115 | Val Loss: 0.0000 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9618 | Val F1: 1.0000 | Train Time: 15.976536273956299 secs
+Epoch: 65 | Train Loss: 0.0110 | Val Loss: 0.0002 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9545 | Val F1: 1.0000 | Train Time: 15.873792171478271 secs
+Epoch: 66 | Train Loss: 0.0081 | Val Loss: 0.0000 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9612 | Val F1: 1.0000 | Train Time: 15.86460566520691 secs
+Epoch: 67 | Train Loss: 0.0083 | Val Loss: 0.0000 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9618 | Val F1: 1.0000 | Train Time: 15.92696499824524 secs
+Epoch: 68 | Train Loss: 0.0099 | Val Loss: 0.0004 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9545 | Val F1: 1.0000 | Train Time: 15.845618486404419 secs
+Epoch: 69 | Train Loss: 0.0057 | Val Loss: 0.0005 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.974085330963135 secs
+Epoch: 70 | Train Loss: 0.0133 | Val Loss: 0.0000 | Train Acc: 0.9929 | Val Acc: 1.0000 | Train F1: 0.9697 | Val F1: 1.0000 | Train Time: 15.860034704208374 secs
+Epoch: 71 | Train Loss: 0.0079 | Val Loss: 0.0106 | Train Acc: 0.9965 | Val Acc: 0.9947 | Train F1: 0.9846 | Val F1: 0.9778 | Train Time: 15.819908618927002 secs
+Epoch: 72 | Train Loss: 0.0200 | Val Loss: 0.0002 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9624 | Val F1: 1.0000 | Train Time: 15.968351125717163 secs
+Epoch: 73 | Train Loss: 0.0028 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.901222944259644 secs
+Epoch: 74 | Train Loss: 0.0114 | Val Loss: 0.0002 | Train Acc: 0.9912 | Val Acc: 1.0000 | Train F1: 0.9624 | Val F1: 1.0000 | Train Time: 15.924890995025635 secs
+Epoch: 75 | Train Loss: 0.0017 | Val Loss: 0.0001 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 15.85527515411377 secs
+Epoch: 76 | Train Loss: 0.0068 | Val Loss: 0.0003 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.968978881835938 secs
+Epoch: 77 | Train Loss: 0.0042 | Val Loss: 0.0010 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.828110933303833 secs
+Epoch: 78 | Train Loss: 0.0046 | Val Loss: 0.0001 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.88031816482544 secs
+Epoch: 79 | Train Loss: 0.0044 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9925 | Val F1: 1.0000 | Train Time: 15.859365224838257 secs
+Epoch: 80 | Train Loss: 0.0164 | Val Loss: 0.0003 | Train Acc: 0.9894 | Val Acc: 1.0000 | Train F1: 0.9538 | Val F1: 1.0000 | Train Time: 15.855302333831787 secs
+Epoch: 81 | Train Loss: 0.0151 | Val Loss: 0.0000 | Train Acc: 0.9877 | Val Acc: 1.0000 | Train F1: 0.9466 | Val F1: 1.0000 | Train Time: 15.917169332504272 secs
+Epoch: 82 | Train Loss: 0.0050 | Val Loss: 0.0000 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9846 | Val F1: 1.0000 | Train Time: 15.946519374847412 secs
+Epoch: 83 | Train Loss: 0.0045 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.943794250488281 secs
+Epoch: 84 | Train Loss: 0.0055 | Val Loss: 0.0001 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9771 | Val F1: 1.0000 | Train Time: 15.959920167922974 secs
+Epoch: 85 | Train Loss: 0.0048 | Val Loss: 0.0012 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.855313777923584 secs
+Epoch: 86 | Train Loss: 0.0116 | Val Loss: 0.0000 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.89162802696228 secs
+Epoch: 87 | Train Loss: 0.0055 | Val Loss: 0.0000 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9771 | Val F1: 1.0000 | Train Time: 15.901230812072754 secs
+Epoch: 88 | Train Loss: 0.0023 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.86107063293457 secs
+Epoch: 89 | Train Loss: 0.0021 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 15.832338333129883 secs
+Epoch: 90 | Train Loss: 0.0036 | Val Loss: 0.0001 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.731574773788452 secs
+Epoch: 91 | Train Loss: 0.0028 | Val Loss: 0.0000 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9848 | Val F1: 1.0000 | Train Time: 15.95011019706726 secs
+Epoch: 92 | Train Loss: 0.0100 | Val Loss: 0.0000 | Train Acc: 0.9929 | Val Acc: 1.0000 | Train F1: 0.9697 | Val F1: 1.0000 | Train Time: 15.855860710144043 secs
+Epoch: 93 | Train Loss: 0.0123 | Val Loss: 0.0004 | Train Acc: 0.9929 | Val Acc: 1.0000 | Train F1: 0.9692 | Val F1: 1.0000 | Train Time: 15.834434270858765 secs
+Epoch: 94 | Train Loss: 0.0047 | Val Loss: 0.0001 | Train Acc: 0.9929 | Val Acc: 1.0000 | Train F1: 0.9697 | Val F1: 1.0000 | Train Time: 15.941105604171753 secs
+Epoch: 95 | Train Loss: 0.0022 | Val Loss: 0.0000 | Train Acc: 1.0000 | Val Acc: 1.0000 | Train F1: 1.0000 | Val F1: 1.0000 | Train Time: 15.838162899017334 secs
+Epoch: 96 | Train Loss: 0.0079 | Val Loss: 0.0000 | Train Acc: 0.9947 | Val Acc: 1.0000 | Train F1: 0.9774 | Val F1: 1.0000 | Train Time: 15.822728395462036 secs
+Epoch: 97 | Train Loss: 0.0025 | Val Loss: 0.0000 | Train Acc: 0.9965 | Val Acc: 1.0000 | Train F1: 0.9846 | Val F1: 1.0000 | Train Time: 15.971248626708984 secs
+Epoch: 98 | Train Loss: 0.0016 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9925 | Val F1: 1.0000 | Train Time: 15.942035436630249 secs
+Epoch: 99 | Train Loss: 0.0023 | Val Loss: 0.0000 | Train Acc: 0.9982 | Val Acc: 1.0000 | Train F1: 0.9924 | Val F1: 1.0000 | Train Time: 15.830941677093506 secs
+The predictive performance on test data of Fodors-Zagats is: {'precision': 1.0, 'recall': 1.0, 'accuracy': 1.0, 'f1': 1.0}
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr  | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data/datasets/entity_matching/structured/Fodors-Zagats | prompt    | entity_matching | 8          | 100    | 0.2 | 1234 | False      | cuda   | 10        | 50                 | False   | 8 | 8  | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+trainable params: 102,400 || all params: 737,770,496 || trainable%: 0.01387965506281238
+Epoch: 0 | Train Loss: 14.9489 | Val Loss: 3.2567 | Train Acc: 0.0441 | Val Acc: 0.8737 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.081696033477783 secs
+Epoch: 1 | Train Loss: 1.4990 | Val Loss: 0.3183 | Train Acc: 0.7037 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 29.651509523391724 secs
+Epoch: 2 | Train Loss: 0.3795 | Val Loss: 0.2176 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 29.835758209228516 secs
+Epoch: 3 | Train Loss: 0.2629 | Val Loss: 0.1892 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 29.849459886550903 secs
+Epoch: 4 | Train Loss: 4.1057 | Val Loss: 0.6129 | Train Acc: 0.7037 | Val Acc: 0.8842 | Train F1: 0.0025 | Val F1: 0.0000 | Train Time: 30.11901092529297 secs
+Epoch: 5 | Train Loss: 0.8409 | Val Loss: 0.2616 | Train Acc: 0.8642 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.159679651260376 secs
+Epoch: 6 | Train Loss: 0.4414 | Val Loss: 0.2274 | Train Acc: 0.8713 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.296377420425415 secs
+Epoch: 7 | Train Loss: 0.2582 | Val Loss: 0.2013 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.905028104782104 secs
+Epoch: 8 | Train Loss: 0.2441 | Val Loss: 0.1755 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0101 | Val F1: 0.0000 | Train Time: 30.329136610031128 secs
+Epoch: 9 | Train Loss: 0.2295 | Val Loss: 0.1909 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0173 | Val F1: 0.0000 | Train Time: 30.716525554656982 secs
+Epoch: 10 | Train Loss: 0.2183 | Val Loss: 0.1579 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.498136520385742 secs
+Epoch: 11 | Train Loss: 0.2157 | Val Loss: 0.1716 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.37014889717102 secs
+Epoch: 12 | Train Loss: 0.2006 | Val Loss: 0.2065 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0303 | Val F1: 0.0000 | Train Time: 30.552645921707153 secs
+Epoch: 13 | Train Loss: 0.2095 | Val Loss: 0.2060 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0242 | Val F1: 0.0000 | Train Time: 30.991236448287964 secs
+Epoch: 14 | Train Loss: 0.2005 | Val Loss: 0.2394 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0202 | Val F1: 0.0000 | Train Time: 30.34559392929077 secs
+Epoch: 15 | Train Loss: 0.1957 | Val Loss: 0.1705 | Train Acc: 0.8713 | Val Acc: 0.8842 | Train F1: 0.0110 | Val F1: 0.0000 | Train Time: 30.483257055282593 secs
+Epoch: 16 | Train Loss: 0.2045 | Val Loss: 0.2278 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.573756456375122 secs
+Epoch: 17 | Train Loss: 0.2385 | Val Loss: 0.2433 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 30.500645637512207 secs
+Epoch: 18 | Train Loss: 0.2137 | Val Loss: 0.1486 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0101 | Val F1: 0.0000 | Train Time: 30.767411470413208 secs
+Epoch: 19 | Train Loss: 0.1933 | Val Loss: 0.1492 | Train Acc: 0.8730 | Val Acc: 0.8842 | Train F1: 0.0038 | Val F1: 0.0000 | Train Time: 30.849719047546387 secs
+Epoch: 20 | Train Loss: 0.1902 | Val Loss: 0.2264 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0273 | Val F1: 0.0000 | Train Time: 31.059760808944702 secs
+Epoch: 21 | Train Loss: 0.2020 | Val Loss: 0.1673 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0202 | Val F1: 0.0000 | Train Time: 30.471548557281494 secs
+Epoch: 22 | Train Loss: 0.2026 | Val Loss: 0.1902 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0303 | Val F1: 0.0000 | Train Time: 30.88716959953308 secs
+Epoch: 23 | Train Loss: 0.1796 | Val Loss: 0.1415 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0242 | Val F1: 0.0000 | Train Time: 30.547194004058838 secs
+Epoch: 24 | Train Loss: 0.1878 | Val Loss: 0.1467 | Train Acc: 0.8713 | Val Acc: 0.8842 | Train F1: 0.0210 | Val F1: 0.0000 | Train Time: 30.765897750854492 secs
+Epoch: 25 | Train Loss: 0.1867 | Val Loss: 0.1557 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0173 | Val F1: 0.0000 | Train Time: 30.522423267364502 secs
+Epoch: 26 | Train Loss: 0.1798 | Val Loss: 0.1131 | Train Acc: 0.8871 | Val Acc: 0.8842 | Train F1: 0.1091 | Val F1: 0.0000 | Train Time: 30.6452157497406 secs
+Epoch: 27 | Train Loss: 0.1842 | Val Loss: 0.1081 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0583 | Val F1: 0.0000 | Train Time: 30.910355806350708 secs
+Epoch: 28 | Train Loss: 0.1751 | Val Loss: 0.1318 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0152 | Val F1: 0.0000 | Train Time: 30.486754655838013 secs
+Epoch: 29 | Train Loss: 0.1598 | Val Loss: 0.1393 | Train Acc: 0.8854 | Val Acc: 0.8842 | Train F1: 0.1142 | Val F1: 0.0000 | Train Time: 30.83085560798645 secs
+Epoch: 30 | Train Loss: 0.1680 | Val Loss: 0.1228 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0779 | Val F1: 0.0000 | Train Time: 30.696854829788208 secs
+Epoch: 31 | Train Loss: 0.1515 | Val Loss: 0.1610 | Train Acc: 0.8959 | Val Acc: 0.8842 | Train F1: 0.3103 | Val F1: 0.0000 | Train Time: 30.867903470993042 secs
+Epoch: 32 | Train Loss: 0.1439 | Val Loss: 0.1297 | Train Acc: 0.8924 | Val Acc: 0.8842 | Train F1: 0.2020 | Val F1: 0.0000 | Train Time: 30.62236452102661 secs
+Epoch: 33 | Train Loss: 0.1423 | Val Loss: 0.1267 | Train Acc: 0.8854 | Val Acc: 0.8947 | Train F1: 0.2048 | Val F1: 0.1667 | Train Time: 31.05226755142212 secs
+Saving model with validation F1: 0.16666666666666669 at epoch: 33
+Epoch: 34 | Train Loss: 0.1381 | Val Loss: 0.2163 | Train Acc: 0.9083 | Val Acc: 0.8842 | Train F1: 0.4694 | Val F1: 0.0000 | Train Time: 31.084124326705933 secs
+Epoch: 35 | Train Loss: 0.1513 | Val Loss: 0.1898 | Train Acc: 0.8889 | Val Acc: 0.8842 | Train F1: 0.2825 | Val F1: 0.0000 | Train Time: 30.61251401901245 secs
+Epoch: 36 | Train Loss: 0.1359 | Val Loss: 0.2270 | Train Acc: 0.9101 | Val Acc: 0.8842 | Train F1: 0.4270 | Val F1: 0.0000 | Train Time: 31.1224422454834 secs
+Epoch: 37 | Train Loss: 0.1220 | Val Loss: 0.1595 | Train Acc: 0.9242 | Val Acc: 0.8895 | Train F1: 0.5376 | Val F1: 0.0870 | Train Time: 30.536601066589355 secs
+Epoch: 38 | Train Loss: 0.1129 | Val Loss: 0.0565 | Train Acc: 0.9189 | Val Acc: 0.9474 | Train F1: 0.5490 | Val F1: 0.7059 | Train Time: 30.555153131484985 secs
+Saving model with validation F1: 0.7058823529411764 at epoch: 38
+Epoch: 39 | Train Loss: 0.1165 | Val Loss: 0.1802 | Train Acc: 0.9189 | Val Acc: 0.8947 | Train F1: 0.5490 | Val F1: 0.1667 | Train Time: 30.8924081325531 secs
+Epoch: 40 | Train Loss: 0.1216 | Val Loss: 0.0826 | Train Acc: 0.9083 | Val Acc: 0.9211 | Train F1: 0.4694 | Val F1: 0.4828 | Train Time: 30.63088583946228 secs
+Epoch: 41 | Train Loss: 0.1239 | Val Loss: 0.0740 | Train Acc: 0.9153 | Val Acc: 0.9421 | Train F1: 0.5000 | Val F1: 0.6667 | Train Time: 30.644339561462402 secs
+Epoch: 42 | Train Loss: 0.1075 | Val Loss: 0.1254 | Train Acc: 0.9153 | Val Acc: 0.8842 | Train F1: 0.5556 | Val F1: 0.0000 | Train Time: 30.526668787002563 secs
+Epoch: 43 | Train Loss: 0.1227 | Val Loss: 0.1579 | Train Acc: 0.9136 | Val Acc: 0.8947 | Train F1: 0.5149 | Val F1: 0.1667 | Train Time: 30.905521392822266 secs
+Epoch: 44 | Train Loss: 0.1109 | Val Loss: 0.0132 | Train Acc: 0.9171 | Val Acc: 0.9895 | Train F1: 0.5437 | Val F1: 0.9524 | Train Time: 30.734416484832764 secs
+Saving model with validation F1: 0.9523809523809523 at epoch: 44
+Epoch: 45 | Train Loss: 0.1037 | Val Loss: 0.0844 | Train Acc: 0.9400 | Val Acc: 0.9421 | Train F1: 0.6852 | Val F1: 0.6667 | Train Time: 30.953922748565674 secs
+Epoch: 46 | Train Loss: 0.0879 | Val Loss: 0.0150 | Train Acc: 0.9436 | Val Acc: 0.9895 | Train F1: 0.7241 | Val F1: 0.9524 | Train Time: 30.869347095489502 secs
+Epoch: 47 | Train Loss: 0.0935 | Val Loss: 0.0478 | Train Acc: 0.9312 | Val Acc: 0.9579 | Train F1: 0.6723 | Val F1: 0.7778 | Train Time: 30.495664834976196 secs
+Epoch: 48 | Train Loss: 0.0901 | Val Loss: 0.0873 | Train Acc: 0.9295 | Val Acc: 0.9526 | Train F1: 0.6364 | Val F1: 0.7429 | Train Time: 30.659170866012573 secs
+Epoch: 49 | Train Loss: 0.0919 | Val Loss: 0.1242 | Train Acc: 0.9453 | Val Acc: 0.9053 | Train F1: 0.7257 | Val F1: 0.3077 | Train Time: 30.855109930038452 secs
+Epoch: 50 | Train Loss: 0.0832 | Val Loss: 0.0713 | Train Acc: 0.9524 | Val Acc: 0.9632 | Train F1: 0.7652 | Val F1: 0.8108 | Train Time: 30.741626739501953 secs
+Epoch: 51 | Train Loss: 0.0730 | Val Loss: 0.0915 | Train Acc: 0.9559 | Val Acc: 0.9474 | Train F1: 0.8000 | Val F1: 0.7059 | Train Time: 30.581915855407715 secs
+Epoch: 52 | Train Loss: 0.0727 | Val Loss: 0.0553 | Train Acc: 0.9559 | Val Acc: 0.9632 | Train F1: 0.7934 | Val F1: 0.8108 | Train Time: 30.914308309555054 secs
+Epoch: 53 | Train Loss: 0.0752 | Val Loss: 0.0089 | Train Acc: 0.9489 | Val Acc: 0.9947 | Train F1: 0.7752 | Val F1: 0.9767 | Train Time: 30.88708782196045 secs
+Saving model with validation F1: 0.9767441860465117 at epoch: 53
+Epoch: 54 | Train Loss: 0.0721 | Val Loss: 0.0505 | Train Acc: 0.9471 | Val Acc: 0.9632 | Train F1: 0.7458 | Val F1: 0.8108 | Train Time: 30.592036247253418 secs
+Epoch: 55 | Train Loss: 0.0670 | Val Loss: 0.1101 | Train Acc: 0.9541 | Val Acc: 0.9421 | Train F1: 0.7937 | Val F1: 0.6667 | Train Time: 30.47841167449951 secs
+Epoch: 56 | Train Loss: 0.0802 | Val Loss: 0.0201 | Train Acc: 0.9453 | Val Acc: 0.9737 | Train F1: 0.7395 | Val F1: 0.8718 | Train Time: 30.769510746002197 secs
+Epoch: 57 | Train Loss: 0.0554 | Val Loss: 0.0480 | Train Acc: 0.9718 | Val Acc: 0.9632 | Train F1: 0.8710 | Val F1: 0.8108 | Train Time: 30.44461441040039 secs
+Epoch: 58 | Train Loss: 0.0552 | Val Loss: 0.0057 | Train Acc: 0.9683 | Val Acc: 0.9947 | Train F1: 0.8548 | Val F1: 0.9767 | Train Time: 30.487284660339355 secs
+Epoch: 59 | Train Loss: 0.0793 | Val Loss: 0.1203 | Train Acc: 0.9506 | Val Acc: 0.9263 | Train F1: 0.7879 | Val F1: 0.5333 | Train Time: 30.90439224243164 secs
+Epoch: 60 | Train Loss: 0.0527 | Val Loss: 0.0197 | Train Acc: 0.9577 | Val Acc: 0.9842 | Train F1: 0.8095 | Val F1: 0.9268 | Train Time: 30.68420720100403 secs
+Epoch: 61 | Train Loss: 0.0521 | Val Loss: 0.0085 | Train Acc: 0.9683 | Val Acc: 0.9895 | Train F1: 0.8615 | Val F1: 0.9524 | Train Time: 30.52187204360962 secs
+Epoch: 62 | Train Loss: 0.0446 | Val Loss: 0.0113 | Train Acc: 0.9753 | Val Acc: 0.9895 | Train F1: 0.8871 | Val F1: 0.9524 | Train Time: 30.777024745941162 secs
+Epoch: 63 | Train Loss: 0.0527 | Val Loss: 0.0428 | Train Acc: 0.9824 | Val Acc: 0.9789 | Train F1: 0.9194 | Val F1: 0.9000 | Train Time: 30.7654926776886 secs
+Epoch: 64 | Train Loss: 0.0347 | Val Loss: 0.0095 | Train Acc: 0.9824 | Val Acc: 0.9947 | Train F1: 0.9231 | Val F1: 0.9767 | Train Time: 30.897029399871826 secs
+Epoch: 65 | Train Loss: 0.0616 | Val Loss: 0.0064 | Train Acc: 0.9506 | Val Acc: 0.9947 | Train F1: 0.7742 | Val F1: 0.9767 | Train Time: 31.092976808547974 secs
+Epoch: 66 | Train Loss: 0.0502 | Val Loss: 0.0103 | Train Acc: 0.9612 | Val Acc: 0.9895 | Train F1: 0.8308 | Val F1: 0.9524 | Train Time: 30.583093643188477 secs
+Epoch: 67 | Train Loss: 0.0463 | Val Loss: 0.0051 | Train Acc: 0.9788 | Val Acc: 0.9947 | Train F1: 0.9048 | Val F1: 0.9767 | Train Time: 30.729480028152466 secs
+Epoch: 68 | Train Loss: 0.0445 | Val Loss: 0.0324 | Train Acc: 0.9753 | Val Acc: 0.9789 | Train F1: 0.8906 | Val F1: 0.9000 | Train Time: 31.04531216621399 secs
+Epoch: 69 | Train Loss: 0.0391 | Val Loss: 0.0214 | Train Acc: 0.9788 | Val Acc: 0.9842 | Train F1: 0.9091 | Val F1: 0.9268 | Train Time: 30.480401754379272 secs
+Epoch: 70 | Train Loss: 0.0573 | Val Loss: 0.0022 | Train Acc: 0.9630 | Val Acc: 1.0000 | Train F1: 0.8346 | Val F1: 1.0000 | Train Time: 30.763348817825317 secs
+Saving model with validation F1: 1.0 at epoch: 70
+Epoch: 71 | Train Loss: 0.0294 | Val Loss: 0.0059 | Train Acc: 0.9841 | Val Acc: 0.9947 | Train F1: 0.9291 | Val F1: 0.9767 | Train Time: 30.642770051956177 secs
+Epoch: 72 | Train Loss: 0.0395 | Val Loss: 0.0559 | Train Acc: 0.9788 | Val Acc: 0.9684 | Train F1: 0.9062 | Val F1: 0.8421 | Train Time: 31.289290189743042 secs
+Epoch: 73 | Train Loss: 0.0342 | Val Loss: 0.0089 | Train Acc: 0.9841 | Val Acc: 0.9947 | Train F1: 0.9313 | Val F1: 0.9767 | Train Time: 30.93187189102173 secs
+Epoch: 74 | Train Loss: 0.0420 | Val Loss: 0.0093 | Train Acc: 0.9753 | Val Acc: 0.9947 | Train F1: 0.8906 | Val F1: 0.9767 | Train Time: 31.26363778114319 secs
+Epoch: 75 | Train Loss: 0.0386 | Val Loss: 0.0399 | Train Acc: 0.9700 | Val Acc: 0.9737 | Train F1: 0.8702 | Val F1: 0.8718 | Train Time: 30.585861444473267 secs
+Epoch: 76 | Train Loss: 0.0424 | Val Loss: 0.0699 | Train Acc: 0.9788 | Val Acc: 0.9684 | Train F1: 0.9077 | Val F1: 0.8421 | Train Time: 31.081613779067993 secs
+Epoch: 77 | Train Loss: 0.0369 | Val Loss: 0.0045 | Train Acc: 0.9788 | Val Acc: 0.9947 | Train F1: 0.9062 | Val F1: 0.9767 | Train Time: 30.916808605194092 secs
+Epoch: 78 | Train Loss: 0.0370 | Val Loss: 0.0155 | Train Acc: 0.9753 | Val Acc: 0.9895 | Train F1: 0.8923 | Val F1: 0.9524 | Train Time: 30.63925051689148 secs
+Epoch: 79 | Train Loss: 0.0274 | Val Loss: 0.0324 | Train Acc: 0.9894 | Val Acc: 0.9789 | Train F1: 0.9545 | Val F1: 0.9000 | Train Time: 30.586462020874023 secs
+Epoch: 80 | Train Loss: 0.0219 | Val Loss: 0.1054 | Train Acc: 0.9859 | Val Acc: 0.9579 | Train F1: 0.9394 | Val F1: 0.7778 | Train Time: 30.787805557250977 secs
+Epoch: 81 | Train Loss: 0.0494 | Val Loss: 0.0356 | Train Acc: 0.9718 | Val Acc: 0.9684 | Train F1: 0.8710 | Val F1: 0.8421 | Train Time: 31.044670820236206 secs
+Epoch: 82 | Train Loss: 0.0372 | Val Loss: 0.0360 | Train Acc: 0.9824 | Val Acc: 0.9737 | Train F1: 0.9231 | Val F1: 0.8718 | Train Time: 30.817278385162354 secs
+Epoch: 83 | Train Loss: 0.0333 | Val Loss: 0.0411 | Train Acc: 0.9824 | Val Acc: 0.9737 | Train F1: 0.9219 | Val F1: 0.8718 | Train Time: 30.709782361984253 secs
+Epoch: 84 | Train Loss: 0.0362 | Val Loss: 0.0175 | Train Acc: 0.9735 | Val Acc: 0.9895 | Train F1: 0.8837 | Val F1: 0.9524 | Train Time: 30.776253700256348 secs
+Epoch: 85 | Train Loss: 0.0284 | Val Loss: 0.0110 | Train Acc: 0.9841 | Val Acc: 0.9947 | Train F1: 0.9313 | Val F1: 0.9767 | Train Time: 30.717837810516357 secs
+Epoch: 86 | Train Loss: 0.0385 | Val Loss: 0.0024 | Train Acc: 0.9771 | Val Acc: 1.0000 | Train F1: 0.9008 | Val F1: 1.0000 | Train Time: 30.822938442230225 secs
+Epoch: 87 | Train Loss: 0.0306 | Val Loss: 0.0065 | Train Acc: 0.9824 | Val Acc: 0.9947 | Train F1: 0.9206 | Val F1: 0.9767 | Train Time: 30.88600993156433 secs
+Epoch: 88 | Train Loss: 0.0397 | Val Loss: 0.0203 | Train Acc: 0.9753 | Val Acc: 0.9842 | Train F1: 0.8923 | Val F1: 0.9268 | Train Time: 30.883875131607056 secs
+Epoch: 89 | Train Loss: 0.0304 | Val Loss: 0.1040 | Train Acc: 0.9806 | Val Acc: 0.9632 | Train F1: 0.9173 | Val F1: 0.8108 | Train Time: 30.484119415283203 secs
+Epoch: 90 | Train Loss: 0.0320 | Val Loss: 0.0060 | Train Acc: 0.9788 | Val Acc: 0.9947 | Train F1: 0.9048 | Val F1: 0.9767 | Train Time: 30.65708351135254 secs
+Epoch: 91 | Train Loss: 0.0236 | Val Loss: 0.0393 | Train Acc: 0.9929 | Val Acc: 0.9789 | Train F1: 0.9692 | Val F1: 0.9000 | Train Time: 30.89591646194458 secs
+Epoch: 92 | Train Loss: 0.0376 | Val Loss: 0.0315 | Train Acc: 0.9788 | Val Acc: 0.9842 | Train F1: 0.9104 | Val F1: 0.9268 | Train Time: 30.818647146224976 secs
+Epoch: 93 | Train Loss: 0.0210 | Val Loss: 0.0433 | Train Acc: 0.9877 | Val Acc: 0.9789 | Train F1: 0.9474 | Val F1: 0.9000 | Train Time: 30.7044939994812 secs
+Epoch: 94 | Train Loss: 0.0224 | Val Loss: 0.0158 | Train Acc: 0.9877 | Val Acc: 0.9947 | Train F1: 0.9466 | Val F1: 0.9767 | Train Time: 31.02502155303955 secs
+Epoch: 95 | Train Loss: 0.0268 | Val Loss: 0.0172 | Train Acc: 0.9859 | Val Acc: 0.9895 | Train F1: 0.9394 | Val F1: 0.9524 | Train Time: 30.703432083129883 secs
+Epoch: 96 | Train Loss: 0.0238 | Val Loss: 0.0357 | Train Acc: 0.9877 | Val Acc: 0.9789 | Train F1: 0.9474 | Val F1: 0.9000 | Train Time: 31.126797437667847 secs
+Epoch: 97 | Train Loss: 0.0180 | Val Loss: 0.0170 | Train Acc: 0.9841 | Val Acc: 0.9895 | Train F1: 0.9291 | Val F1: 0.9524 | Train Time: 30.61186385154724 secs
+Epoch: 98 | Train Loss: 0.0199 | Val Loss: 0.0181 | Train Acc: 0.9877 | Val Acc: 0.9895 | Train F1: 0.9466 | Val F1: 0.9524 | Train Time: 30.94399356842041 secs
+Epoch: 99 | Train Loss: 0.0269 | Val Loss: 0.0150 | Train Acc: 0.9894 | Val Acc: 0.9947 | Train F1: 0.9531 | Val F1: 0.9767 | Train Time: 30.544291019439697 secs
+The predictive performance on test data of Fodors-Zagats is: {'precision': 1.0, 'recall': 0.9545454545454546, 'accuracy': 0.9947089947089947, 'f1': 0.9767441860465117}
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Parsed arguments:
+ +--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data_dir                                               | peft_type | task            | batch_size | epochs | lr  | seed | add_prefix | device | save_freq | num_virtual_tokens | balance | r | la | sep_tok |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+| data/datasets/entity_matching/structured/Fodors-Zagats | p-tune    | entity_matching | 8          | 100    | 0.2 | 1234 | False      | cuda   | 10        | 60                 | False   | 8 | 8  | .       |
++--------------------------------------------------------+-----------+-----------------+------------+--------+-----+------+------------+--------+-----------+--------------------+---------+---+----+---------+
+trainable params: 402,688 || all params: 738,070,784 || trainable%: 0.0545595366636271
+Epoch: 0 | Train Loss: 3.1097 | Val Loss: 0.3556 | Train Acc: 0.4956 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.197314739227295 secs
+Epoch: 1 | Train Loss: 0.3009 | Val Loss: 0.1883 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 31.86713671684265 secs
+Epoch: 2 | Train Loss: 0.2225 | Val Loss: 0.1949 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.063273429870605 secs
+Epoch: 3 | Train Loss: 0.2179 | Val Loss: 0.1807 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.08909320831299 secs
+Epoch: 4 | Train Loss: 0.2065 | Val Loss: 0.1812 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.99013137817383 secs
+Epoch: 5 | Train Loss: 0.2163 | Val Loss: 0.1982 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.682987451553345 secs
+Epoch: 6 | Train Loss: 0.2150 | Val Loss: 0.1995 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.65649604797363 secs
+Epoch: 7 | Train Loss: 0.2043 | Val Loss: 0.1824 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.97660827636719 secs
+Epoch: 8 | Train Loss: 0.2021 | Val Loss: 0.1708 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.89873027801514 secs
+Epoch: 9 | Train Loss: 0.1988 | Val Loss: 0.1686 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.969876766204834 secs
+Epoch: 10 | Train Loss: 0.2170 | Val Loss: 0.3312 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.760204792022705 secs
+Epoch: 11 | Train Loss: 0.6744 | Val Loss: 0.2895 | Train Acc: 0.8466 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 32.99415111541748 secs
+Epoch: 12 | Train Loss: 0.2816 | Val Loss: 0.2031 | Train Acc: 0.8836 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.07612943649292 secs
+Epoch: 13 | Train Loss: 0.2349 | Val Loss: 0.1833 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0101 | Val F1: 0.0000 | Train Time: 33.47925662994385 secs
+Epoch: 14 | Train Loss: 0.2282 | Val Loss: 0.1785 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.0611093044281 secs
+Epoch: 15 | Train Loss: 0.2284 | Val Loss: 0.1774 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.59029984474182 secs
+Epoch: 16 | Train Loss: 0.2125 | Val Loss: 0.1755 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.37210130691528 secs
+Epoch: 17 | Train Loss: 0.2147 | Val Loss: 0.1746 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.375792264938354 secs
+Epoch: 18 | Train Loss: 0.2208 | Val Loss: 0.1715 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.273314476013184 secs
+Epoch: 19 | Train Loss: 0.2123 | Val Loss: 0.1702 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.137389183044434 secs
+Epoch: 20 | Train Loss: 0.2084 | Val Loss: 0.1681 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.735541582107544 secs
+Epoch: 21 | Train Loss: 0.2129 | Val Loss: 0.1656 | Train Acc: 0.8730 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.48133969306946 secs
+Epoch: 22 | Train Loss: 0.2103 | Val Loss: 0.1659 | Train Acc: 0.8854 | Val Acc: 0.8842 | Train F1: 0.0299 | Val F1: 0.0000 | Train Time: 33.01801562309265 secs
+Epoch: 23 | Train Loss: 0.2050 | Val Loss: 0.1655 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.37569570541382 secs
+Epoch: 24 | Train Loss: 0.1924 | Val Loss: 0.1625 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0061 | Val F1: 0.0000 | Train Time: 33.46926307678223 secs
+Epoch: 25 | Train Loss: 0.1974 | Val Loss: 0.1602 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0242 | Val F1: 0.0000 | Train Time: 33.41567587852478 secs
+Epoch: 26 | Train Loss: 0.1868 | Val Loss: 0.1655 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0202 | Val F1: 0.0000 | Train Time: 33.53295588493347 secs
+Epoch: 27 | Train Loss: 0.2002 | Val Loss: 0.1627 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.16075539588928 secs
+Epoch: 28 | Train Loss: 0.1979 | Val Loss: 0.1581 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0061 | Val F1: 0.0000 | Train Time: 33.24052429199219 secs
+Epoch: 29 | Train Loss: 0.1840 | Val Loss: 0.1648 | Train Acc: 0.8765 | Val Acc: 0.8842 | Train F1: 0.0051 | Val F1: 0.0000 | Train Time: 33.293458223342896 secs
+Epoch: 30 | Train Loss: 0.1910 | Val Loss: 0.1431 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0076 | Val F1: 0.0000 | Train Time: 33.18982529640198 secs
+Epoch: 31 | Train Loss: 0.1986 | Val Loss: 0.1439 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0076 | Val F1: 0.0000 | Train Time: 33.24714684486389 secs
+Epoch: 32 | Train Loss: 0.1783 | Val Loss: 0.1419 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0441 | Val F1: 0.0000 | Train Time: 33.32584357261658 secs
+Epoch: 33 | Train Loss: 0.1926 | Val Loss: 0.1466 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0061 | Val F1: 0.0000 | Train Time: 33.45838117599487 secs
+Epoch: 34 | Train Loss: 0.1934 | Val Loss: 0.1390 | Train Acc: 0.8713 | Val Acc: 0.8842 | Train F1: 0.0034 | Val F1: 0.0000 | Train Time: 32.90507936477661 secs
+Epoch: 35 | Train Loss: 0.1903 | Val Loss: 0.1445 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.0242 | Val F1: 0.0000 | Train Time: 33.515541315078735 secs
+Epoch: 36 | Train Loss: 0.1880 | Val Loss: 0.1703 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0173 | Val F1: 0.0000 | Train Time: 33.169949531555176 secs
+Epoch: 37 | Train Loss: 0.1869 | Val Loss: 0.1454 | Train Acc: 0.8801 | Val Acc: 0.8842 | Train F1: 0.0202 | Val F1: 0.0000 | Train Time: 33.56887197494507 secs
+Epoch: 38 | Train Loss: 0.1826 | Val Loss: 0.1428 | Train Acc: 0.8730 | Val Acc: 0.8842 | Train F1: 0.0227 | Val F1: 0.0000 | Train Time: 33.19262504577637 secs
+Epoch: 39 | Train Loss: 0.1932 | Val Loss: 0.1721 | Train Acc: 0.8730 | Val Acc: 0.8842 | Train F1: 0.0000 | Val F1: 0.0000 | Train Time: 33.90198016166687 secs
+Epoch: 40 | Train Loss: 0.1808 | Val Loss: 0.1647 | Train Acc: 0.8889 | Val Acc: 0.8842 | Train F1: 0.1212 | Val F1: 0.0000 | Train Time: 33.264883041381836 secs
+Epoch: 41 | Train Loss: 0.1887 | Val Loss: 0.1514 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0043 | Val F1: 0.0000 | Train Time: 33.81044054031372 secs
+Epoch: 42 | Train Loss: 0.1819 | Val Loss: 0.1656 | Train Acc: 0.8748 | Val Acc: 0.8842 | Train F1: 0.0043 | Val F1: 0.0000 | Train Time: 33.8831524848938 secs
+Epoch: 43 | Train Loss: 0.1729 | Val Loss: 0.1778 | Train Acc: 0.8801 | Val Acc: 0.9263 | Train F1: 0.0202 | Val F1: 0.5333 | Train Time: 33.195322036743164 secs
+Saving model with validation F1: 0.5333333333333333 at epoch: 43
+Epoch: 44 | Train Loss: 0.1846 | Val Loss: 0.1671 | Train Acc: 0.8713 | Val Acc: 0.9105 | Train F1: 0.0034 | Val F1: 0.3704 | Train Time: 33.96813440322876 secs
+Epoch: 45 | Train Loss: 0.1741 | Val Loss: 0.2251 | Train Acc: 0.8818 | Val Acc: 0.9105 | Train F1: 0.0390 | Val F1: 0.7018 | Train Time: 33.53199076652527 secs
+Saving model with validation F1: 0.7017543859649122 at epoch: 45
+Epoch: 46 | Train Loss: 0.1884 | Val Loss: 0.1422 | Train Acc: 0.8818 | Val Acc: 0.8842 | Train F1: 0.1141 | Val F1: 0.0000 | Train Time: 33.88107872009277 secs
+Epoch: 47 | Train Loss: 0.1800 | Val Loss: 0.1264 | Train Acc: 0.8907 | Val Acc: 0.8842 | Train F1: 0.1485 | Val F1: 0.0000 | Train Time: 33.79613208770752 secs
+Epoch: 48 | Train Loss: 0.1708 | Val Loss: 0.1444 | Train Acc: 0.8871 | Val Acc: 0.9368 | Train F1: 0.1237 | Val F1: 0.6250 | Train Time: 33.92514133453369 secs
+Epoch: 49 | Train Loss: 0.1482 | Val Loss: 0.1269 | Train Acc: 0.8818 | Val Acc: 0.9105 | Train F1: 0.0990 | Val F1: 0.3704 | Train Time: 33.34955024719238 secs
+Epoch: 50 | Train Loss: 0.1757 | Val Loss: 0.1457 | Train Acc: 0.8765 | Val Acc: 0.9526 | Train F1: 0.0825 | Val F1: 0.7429 | Train Time: 33.52527356147766 secs
+Saving model with validation F1: 0.7428571428571429 at epoch: 50
+Epoch: 51 | Train Loss: 0.1635 | Val Loss: 0.1203 | Train Acc: 0.8907 | Val Acc: 0.8842 | Train F1: 0.1753 | Val F1: 0.0000 | Train Time: 33.317758560180664 secs
+Epoch: 52 | Train Loss: 0.1845 | Val Loss: 0.1453 | Train Acc: 0.8783 | Val Acc: 0.8842 | Train F1: 0.0173 | Val F1: 0.0000 | Train Time: 33.623884439468384 secs
+Epoch: 53 | Train Loss: 0.1693 | Val Loss: 0.1617 | Train Acc: 0.8871 | Val Acc: 0.9474 | Train F1: 0.1237 | Val F1: 0.7059 | Train Time: 33.409353733062744 secs
+Epoch: 54 | Train Loss: 0.1763 | Val Loss: 0.1478 | Train Acc: 0.8765 | Val Acc: 0.9579 | Train F1: 0.0404 | Val F1: 0.7778 | Train Time: 33.655662059783936 secs
+Saving model with validation F1: 0.7777777777777778 at epoch: 54
+Epoch: 55 | Train Loss: 0.1763 | Val Loss: 0.1358 | Train Acc: 0.8783 | Val Acc: 0.9579 | Train F1: 0.0303 | Val F1: 0.8182 | Train Time: 33.404359102249146 secs
+Saving model with validation F1: 0.8181818181818182 at epoch: 55
+Epoch: 56 | Train Loss: 0.1703 | Val Loss: 0.1275 | Train Acc: 0.8924 | Val Acc: 0.9579 | Train F1: 0.2297 | Val F1: 0.8261 | Train Time: 33.975170612335205 secs
+Saving model with validation F1: 0.8260869565217391 at epoch: 56
+Epoch: 57 | Train Loss: 0.1763 | Val Loss: 0.0996 | Train Acc: 0.8695 | Val Acc: 0.9474 | Train F1: 0.0545 | Val F1: 0.7059 | Train Time: 33.80341672897339 secs
+Epoch: 58 | Train Loss: 0.1670 | Val Loss: 0.1297 | Train Acc: 0.8854 | Val Acc: 0.9684 | Train F1: 0.1444 | Val F1: 0.8636 | Train Time: 33.50411653518677 secs
+Saving model with validation F1: 0.8636363636363636 at epoch: 58
+Epoch: 59 | Train Loss: 0.1540 | Val Loss: 0.1985 | Train Acc: 0.8871 | Val Acc: 0.8474 | Train F1: 0.1684 | Val F1: 0.6027 | Train Time: 33.700244188308716 secs
+Epoch: 60 | Train Loss: 0.1656 | Val Loss: 0.1258 | Train Acc: 0.8801 | Val Acc: 0.9737 | Train F1: 0.1377 | Val F1: 0.8837 | Train Time: 33.56001424789429 secs
+Saving model with validation F1: 0.8837209302325582 at epoch: 60
+Epoch: 61 | Train Loss: 0.1629 | Val Loss: 0.1520 | Train Acc: 0.8854 | Val Acc: 0.9053 | Train F1: 0.1897 | Val F1: 0.6897 | Train Time: 33.7013053894043 secs
+Epoch: 62 | Train Loss: 0.1588 | Val Loss: 0.1388 | Train Acc: 0.8783 | Val Acc: 0.9263 | Train F1: 0.1318 | Val F1: 0.7308 | Train Time: 33.56043767929077 secs
+Epoch: 63 | Train Loss: 0.1618 | Val Loss: 0.1467 | Train Acc: 0.8818 | Val Acc: 0.9158 | Train F1: 0.1594 | Val F1: 0.7143 | Train Time: 33.5241060256958 secs
+Epoch: 64 | Train Loss: 0.1655 | Val Loss: 0.1258 | Train Acc: 0.8854 | Val Acc: 0.9474 | Train F1: 0.1746 | Val F1: 0.8000 | Train Time: 33.69356083869934 secs
+Epoch: 65 | Train Loss: 0.1504 | Val Loss: 0.1235 | Train Acc: 0.8942 | Val Acc: 0.9474 | Train F1: 0.3419 | Val F1: 0.8077 | Train Time: 33.53820013999939 secs
+Epoch: 66 | Train Loss: 0.1571 | Val Loss: 0.0982 | Train Acc: 0.8907 | Val Acc: 0.9684 | Train F1: 0.2771 | Val F1: 0.8696 | Train Time: 33.66648316383362 secs
+Epoch: 67 | Train Loss: 0.1612 | Val Loss: 0.1252 | Train Acc: 0.8871 | Val Acc: 0.9526 | Train F1: 0.2134 | Val F1: 0.8302 | Train Time: 33.8382043838501 secs
+Epoch: 68 | Train Loss: 0.1416 | Val Loss: 0.1716 | Train Acc: 0.8871 | Val Acc: 0.8737 | Train F1: 0.2284 | Val F1: 0.6471 | Train Time: 33.20390796661377 secs
+Epoch: 69 | Train Loss: 0.1536 | Val Loss: 0.1551 | Train Acc: 0.8854 | Val Acc: 0.9105 | Train F1: 0.2502 | Val F1: 0.7213 | Train Time: 33.887932538986206 secs
+Epoch: 70 | Train Loss: 0.1317 | Val Loss: 0.1008 | Train Acc: 0.9189 | Val Acc: 0.9579 | Train F1: 0.5577 | Val F1: 0.8462 | Train Time: 33.94549202919006 secs
+Epoch: 71 | Train Loss: 0.1572 | Val Loss: 0.1175 | Train Acc: 0.8854 | Val Acc: 0.9421 | Train F1: 0.2957 | Val F1: 0.8000 | Train Time: 33.92815351486206 secs
+Epoch: 72 | Train Loss: 0.1309 | Val Loss: 0.1024 | Train Acc: 0.9118 | Val Acc: 0.9526 | Train F1: 0.4898 | Val F1: 0.8302 | Train Time: 33.465808629989624 secs
+Epoch: 73 | Train Loss: 0.1303 | Val Loss: 0.1986 | Train Acc: 0.9048 | Val Acc: 0.8211 | Train F1: 0.4255 | Val F1: 0.5641 | Train Time: 33.65958261489868 secs
+Epoch: 74 | Train Loss: 0.1410 | Val Loss: 0.1859 | Train Acc: 0.8818 | Val Acc: 0.8579 | Train F1: 0.2351 | Val F1: 0.6197 | Train Time: 33.49979209899902 secs
+Epoch: 75 | Train Loss: 0.1250 | Val Loss: 0.1965 | Train Acc: 0.8995 | Val Acc: 0.8316 | Train F1: 0.4050 | Val F1: 0.5789 | Train Time: 33.76713299751282 secs
+Epoch: 76 | Train Loss: 0.1320 | Val Loss: 0.2666 | Train Acc: 0.9083 | Val Acc: 0.7000 | Train F1: 0.4800 | Val F1: 0.4356 | Train Time: 33.99299240112305 secs
+Epoch: 77 | Train Loss: 0.1297 | Val Loss: 0.2197 | Train Acc: 0.8907 | Val Acc: 0.7895 | Train F1: 0.3667 | Val F1: 0.5238 | Train Time: 33.33518719673157 secs
+Epoch: 78 | Train Loss: 0.1331 | Val Loss: 0.2128 | Train Acc: 0.9065 | Val Acc: 0.8053 | Train F1: 0.4536 | Val F1: 0.5432 | Train Time: 33.60273814201355 secs
+Epoch: 79 | Train Loss: 0.1145 | Val Loss: 0.2707 | Train Acc: 0.9065 | Val Acc: 0.7263 | Train F1: 0.5138 | Val F1: 0.4583 | Train Time: 33.93550205230713 secs
+Epoch: 80 | Train Loss: 0.1256 | Val Loss: 0.1896 | Train Acc: 0.9048 | Val Acc: 0.8421 | Train F1: 0.5000 | Val F1: 0.5946 | Train Time: 33.44737648963928 secs
+Epoch: 81 | Train Loss: 0.1129 | Val Loss: 0.2018 | Train Acc: 0.9153 | Val Acc: 0.8000 | Train F1: 0.5556 | Val F1: 0.5366 | Train Time: 33.74162292480469 secs
+Epoch: 82 | Train Loss: 0.1201 | Val Loss: 0.2011 | Train Acc: 0.9118 | Val Acc: 0.8158 | Train F1: 0.5098 | Val F1: 0.5570 | Train Time: 33.322179555892944 secs
+Epoch: 83 | Train Loss: 0.1173 | Val Loss: 0.1554 | Train Acc: 0.9083 | Val Acc: 0.8684 | Train F1: 0.5273 | Val F1: 0.6377 | Train Time: 33.508278369903564 secs
+Epoch: 84 | Train Loss: 0.1050 | Val Loss: 0.1933 | Train Acc: 0.9259 | Val Acc: 0.8158 | Train F1: 0.6111 | Val F1: 0.5570 | Train Time: 33.23916578292847 secs
+Epoch: 85 | Train Loss: 0.1477 | Val Loss: 0.2973 | Train Acc: 0.8959 | Val Acc: 0.6737 | Train F1: 0.4848 | Val F1: 0.4151 | Train Time: 33.482402086257935 secs
+Epoch: 86 | Train Loss: 0.1306 | Val Loss: 0.2011 | Train Acc: 0.9118 | Val Acc: 0.8158 | Train F1: 0.5536 | Val F1: 0.5570 | Train Time: 34.06510591506958 secs
+Epoch: 87 | Train Loss: 0.1115 | Val Loss: 0.2938 | Train Acc: 0.9277 | Val Acc: 0.6737 | Train F1: 0.6168 | Val F1: 0.4151 | Train Time: 33.897053480148315 secs
+Epoch: 88 | Train Loss: 0.1006 | Val Loss: 0.1926 | Train Acc: 0.9206 | Val Acc: 0.8158 | Train F1: 0.6018 | Val F1: 0.5570 | Train Time: 33.22540616989136 secs
+Epoch: 89 | Train Loss: 0.1091 | Val Loss: 0.1416 | Train Acc: 0.9277 | Val Acc: 0.8789 | Train F1: 0.6555 | Val F1: 0.6567 | Train Time: 34.08538317680359 secs
+Epoch: 90 | Train Loss: 0.1122 | Val Loss: 0.1827 | Train Acc: 0.9259 | Val Acc: 0.8211 | Train F1: 0.6111 | Val F1: 0.5641 | Train Time: 33.32403564453125 secs
+Epoch: 91 | Train Loss: 0.1052 | Val Loss: 0.1736 | Train Acc: 0.9295 | Val Acc: 0.8316 | Train F1: 0.6429 | Val F1: 0.5789 | Train Time: 33.4525089263916 secs
+Epoch: 92 | Train Loss: 0.1073 | Val Loss: 0.1767 | Train Acc: 0.9330 | Val Acc: 0.8316 | Train F1: 0.6724 | Val F1: 0.5789 | Train Time: 33.34525418281555 secs
+Epoch: 93 | Train Loss: 0.1205 | Val Loss: 0.2547 | Train Acc: 0.9171 | Val Acc: 0.7474 | Train F1: 0.5841 | Val F1: 0.4783 | Train Time: 33.92253041267395 secs
+Epoch: 94 | Train Loss: 0.1096 | Val Loss: 0.2449 | Train Acc: 0.9153 | Val Acc: 0.7579 | Train F1: 0.5932 | Val F1: 0.4889 | Train Time: 34.165754318237305 secs
+Epoch: 95 | Train Loss: 0.0988 | Val Loss: 0.1719 | Train Acc: 0.9312 | Val Acc: 0.8421 | Train F1: 0.6667 | Val F1: 0.5946 | Train Time: 33.485801219940186 secs
+Epoch: 96 | Train Loss: 0.1109 | Val Loss: 0.1519 | Train Acc: 0.9083 | Val Acc: 0.8421 | Train F1: 0.5439 | Val F1: 0.5946 | Train Time: 33.78365707397461 secs
+Epoch: 97 | Train Loss: 0.1195 | Val Loss: 0.1659 | Train Acc: 0.9189 | Val Acc: 0.8421 | Train F1: 0.6102 | Val F1: 0.5946 | Train Time: 33.83833694458008 secs
+Epoch: 98 | Train Loss: 0.0938 | Val Loss: 0.1288 | Train Acc: 0.9330 | Val Acc: 0.9000 | Train F1: 0.6935 | Val F1: 0.6984 | Train Time: 33.37371277809143 secs
+Epoch: 99 | Train Loss: 0.1122 | Val Loss: 0.1323 | Train Acc: 0.9189 | Val Acc: 0.8947 | Train F1: 0.5660 | Val F1: 0.6875 | Train Time: 33.24423861503601 secs
+The predictive performance on test data of Fodors-Zagats is: {'precision': 1.0, 'recall': 0.09090909090909091, 'accuracy': 0.8941798941798942, 'f1': 0.16666666666666669}

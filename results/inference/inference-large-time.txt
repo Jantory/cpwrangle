@@ -1,0 +1,161 @@
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Inference on iTunes-Amazon with batch size 512.
+The batch level inference time on test data of iTunes-Amazon with lora is 13.00530281
+The sample level inference time on test data of iTunes-Amazon with lora is 0.02540098
+The token level inference time on test data of iTunes-Amazon with lora is 0.00010902
+Inference on Beer with batch size 512.
+The batch level inference time on test data of Beer with lora is 4.74711673
+The sample level inference time on test data of Beer with lora is 0.00927171
+The token level inference time on test data of Beer with lora is 0.00010908
+Inference on Fodors-Zagats with batch size 64.
+The batch level inference time on test data of Fodors-Zagats with lora is 1.17253640
+The sample level inference time on test data of Fodors-Zagats with lora is 0.01832088
+The token level inference time on test data of Fodors-Zagats with lora is 0.00010686
+Inference on Walmart-Amazon with batch size 64.
+The batch level inference time on test data of Walmart-Amazon with lora is 0.84472607
+The sample level inference time on test data of Walmart-Amazon with lora is 0.01319884
+The token level inference time on test data of Walmart-Amazon with lora is 0.00010937
+Inference on Amazon-Google with batch size 96.
+The batch level inference time on test data of Amazon-Google with lora is 0.92653457
+The sample level inference time on test data of Amazon-Google with lora is 0.00965140
+The token level inference time on test data of Amazon-Google with lora is 0.00011198
+Inference on DBLP-ACM with batch size 32.
+The batch level inference time on test data of DBLP-ACM with lora is 0.73317506
+The sample level inference time on test data of DBLP-ACM with lora is 0.02291172
+The token level inference time on test data of DBLP-ACM with lora is 0.00011328
+Inference on DBLP-GoogleScholar with batch size 64.
+The batch level inference time on test data of DBLP-GoogleScholar with lora is 1.18643662
+The sample level inference time on test data of DBLP-GoogleScholar with lora is 0.01853807
+The token level inference time on test data of DBLP-GoogleScholar with lora is 0.00010806
+Inference on Hospital with batch size 192.
+The batch level inference time on test data of Hospital with lora is 1.05965878
+The sample level inference time on test data of Hospital with lora is 0.00551906
+The token level inference time on test data of Hospital with lora is 0.00012082
+Inference on Buy with batch size 512.
+The batch level inference time on test data of Buy with lora is 7.01026558
+The sample level inference time on test data of Buy with lora is 0.01369192
+The token level inference time on test data of Buy with lora is 0.00014722
+Inference on Restaurant with batch size 512.
+The batch level inference time on test data of Restaurant with lora is 4.60345979
+The sample level inference time on test data of Restaurant with lora is 0.00899113
+The token level inference time on test data of Restaurant with lora is 0.00015774
+Inference on iTunes-Amazon with batch size 32.
+The batch level inference time on test data of iTunes-Amazon with p-tune is 0.93837906
+The sample level inference time on test data of iTunes-Amazon with p-tune is 0.02932435
+The token level inference time on test data of iTunes-Amazon with p-tune is 0.00014133
+Inference on Beer with batch size 512.
+The batch level inference time on test data of Beer with p-tune is 7.43355436
+The sample level inference time on test data of Beer with p-tune is 0.01451866
+The token level inference time on test data of Beer with p-tune is 0.00017081
+Inference on Fodors-Zagats with batch size 32.
+The batch level inference time on test data of Fodors-Zagats with p-tune is 0.77552378
+The sample level inference time on test data of Fodors-Zagats with p-tune is 0.02423512
+The token level inference time on test data of Fodors-Zagats with p-tune is 0.00014331
+Inference on Walmart-Amazon with batch size 32.
+The batch level inference time on test data of Walmart-Amazon with p-tune is 0.57115194
+The sample level inference time on test data of Walmart-Amazon with p-tune is 0.01784850
+The token level inference time on test data of Walmart-Amazon with p-tune is 0.00016081
+Inference on Amazon-Google with batch size 64.
+The batch level inference time on test data of Amazon-Google with p-tune is 0.98054547
+The sample level inference time on test data of Amazon-Google with p-tune is 0.01532102
+The token level inference time on test data of Amazon-Google with p-tune is 0.00017697
+Inference on DBLP-ACM with batch size 32.
+The batch level inference time on test data of DBLP-ACM with p-tune is 0.97938129
+The sample level inference time on test data of DBLP-ACM with p-tune is 0.03060567
+The token level inference time on test data of DBLP-ACM with p-tune is 0.00015132
+Inference on DBLP-GoogleScholar with batch size 32.
+The batch level inference time on test data of DBLP-GoogleScholar with p-tune is 0.78804435
+The sample level inference time on test data of DBLP-GoogleScholar with p-tune is 0.02462639
+The token level inference time on test data of DBLP-GoogleScholar with p-tune is 0.00015371
+Inference on Hospital with batch size 64.
+The batch level inference time on test data of Hospital with p-tune is 0.67589269
+The sample level inference time on test data of Hospital with p-tune is 0.01056082
+The token level inference time on test data of Hospital with p-tune is 0.00025698
+Inference on Buy with batch size 512.
+The batch level inference time on test data of Buy with p-tune is 9.86324359
+The sample level inference time on test data of Buy with p-tune is 0.01926415
+The token level inference time on test data of Buy with p-tune is 0.00020714
+Inference on Restaurant with batch size 512.
+The batch level inference time on test data of Restaurant with p-tune is 7.33736069
+The sample level inference time on test data of Restaurant with p-tune is 0.01433078
+The token level inference time on test data of Restaurant with p-tune is 0.00025142
+Inference on iTunes-Amazon with batch size 32.
+The batch level inference time on test data of iTunes-Amazon with prefix is 0.71305799
+The sample level inference time on test data of iTunes-Amazon with prefix is 0.02228306
+The token level inference time on test data of iTunes-Amazon with prefix is 0.00010740
+Inference on Beer with batch size 512.
+The batch level inference time on test data of Beer with prefix is 4.71291876
+The sample level inference time on test data of Beer with prefix is 0.00920492
+The token level inference time on test data of Beer with prefix is 0.00010829
+Inference on Fodors-Zagats with batch size 32.
+The batch level inference time on test data of Fodors-Zagats with prefix is 0.57297192
+The sample level inference time on test data of Fodors-Zagats with prefix is 0.01790537
+The token level inference time on test data of Fodors-Zagats with prefix is 0.00010588
+Inference on Walmart-Amazon with batch size 32.
+The batch level inference time on test data of Walmart-Amazon with prefix is 0.39348996
+The sample level inference time on test data of Walmart-Amazon with prefix is 0.01229656
+The token level inference time on test data of Walmart-Amazon with prefix is 0.00011079
+Inference on Amazon-Google with batch size 64.
+The batch level inference time on test data of Amazon-Google with prefix is 0.60323879
+The sample level inference time on test data of Amazon-Google with prefix is 0.00942561
+The token level inference time on test data of Amazon-Google with prefix is 0.00010887
+Inference on DBLP-ACM with batch size 32.
+The batch level inference time on test data of DBLP-ACM with prefix is 0.69800610
+The sample level inference time on test data of DBLP-ACM with prefix is 0.02181269
+The token level inference time on test data of DBLP-ACM with prefix is 0.00010784
+Inference on DBLP-GoogleScholar with batch size 32.
+The batch level inference time on test data of DBLP-GoogleScholar with prefix is 0.54723407
+The sample level inference time on test data of DBLP-GoogleScholar with prefix is 0.01710106
+The token level inference time on test data of DBLP-GoogleScholar with prefix is 0.00010674
+Inference on Hospital with batch size 64.
+The batch level inference time on test data of Hospital with prefix is 0.33935726
+The sample level inference time on test data of Hospital with prefix is 0.00530246
+The token level inference time on test data of Hospital with prefix is 0.00012903
+Inference on Buy with batch size 512.
+The batch level inference time on test data of Buy with prefix is 6.82304822
+The sample level inference time on test data of Buy with prefix is 0.01332627
+The token level inference time on test data of Buy with prefix is 0.00014329
+Inference on Restaurant with batch size 512.
+The batch level inference time on test data of Restaurant with prefix is 4.53525509
+The sample level inference time on test data of Restaurant with prefix is 0.00885792
+The token level inference time on test data of Restaurant with prefix is 0.00015540
+Inference on iTunes-Amazon with batch size 32.
+The batch level inference time on test data of iTunes-Amazon with prompt is 0.90395422
+The sample level inference time on test data of iTunes-Amazon with prompt is 0.02824857
+The token level inference time on test data of iTunes-Amazon with prompt is 0.00013615
+Inference on Beer with batch size 384.
+The batch level inference time on test data of Beer with prompt is 5.20064632
+The sample level inference time on test data of Beer with prompt is 0.01354335
+The token level inference time on test data of Beer with prompt is 0.00015933
+Inference on Fodors-Zagats with batch size 32.
+The batch level inference time on test data of Fodors-Zagats with prompt is 0.73363775
+The sample level inference time on test data of Fodors-Zagats with prompt is 0.02292618
+The token level inference time on test data of Fodors-Zagats with prompt is 0.00013557
+Inference on Walmart-Amazon with batch size 32.
+The batch level inference time on test data of Walmart-Amazon with prompt is 0.58438490
+The sample level inference time on test data of Walmart-Amazon with prompt is 0.01826203
+The token level inference time on test data of Walmart-Amazon with prompt is 0.00016453
+Inference on Amazon-Google with batch size 64.
+The batch level inference time on test data of Amazon-Google with prompt is 0.93006929
+The sample level inference time on test data of Amazon-Google with prompt is 0.01453233
+The token level inference time on test data of Amazon-Google with prompt is 0.00016786
+Inference on DBLP-ACM with batch size 32.
+The batch level inference time on test data of DBLP-ACM with prompt is 0.93742759
+The sample level inference time on test data of DBLP-ACM with prompt is 0.02929461
+The token level inference time on test data of DBLP-ACM with prompt is 0.00014483
+Inference on DBLP-GoogleScholar with batch size 32.
+The batch level inference time on test data of DBLP-GoogleScholar with prompt is 0.76217996
+The sample level inference time on test data of DBLP-GoogleScholar with prompt is 0.02381812
+The token level inference time on test data of DBLP-GoogleScholar with prompt is 0.00014866
+Inference on Hospital with batch size 96.
+The batch level inference time on test data of Hospital with prompt is 0.91278087
+The sample level inference time on test data of Hospital with prompt is 0.00950813
+The token level inference time on test data of Hospital with prompt is 0.00022336
+Inference on Buy with batch size 512.
+The batch level inference time on test data of Buy with prompt is 9.28070283
+The sample level inference time on test data of Buy with prompt is 0.01812637
+The token level inference time on test data of Buy with prompt is 0.00019491
+Inference on Restaurant with batch size 512.
+The batch level inference time on test data of Restaurant with prompt is 6.76844653
+The sample level inference time on test data of Restaurant with prompt is 0.01321962
+The token level inference time on test data of Restaurant with prompt is 0.00023192
